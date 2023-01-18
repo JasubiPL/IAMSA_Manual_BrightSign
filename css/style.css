@@ -1,0 +1,123 @@
+:root{
+    --colorPrincipal: #BF2337;
+    --colorPrincipalHover: #EC3D53;
+    --colorSecundario:#605D5F;
+    --colorSecundarioHover:#9a9a9a;
+    --colorNegro: #1e1e1e;
+}
+@font-face {
+    font-family: titulos;
+    src: url("../assets/BebasNeue-Regular.ttf");
+
+}
+@font-face{
+    font-family: texto;
+    src: url("../assets/DarkerGrotesque-Regular.ttf");
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*----------Nav----------*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 56px;
+    /* background-color: red; */
+    font-family: titulos;
+    font-weight: normal;
+
+}
+.nombre_pagina{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 15px;
+    color: var(--colorNegro);
+}
+.nombre_pagina img{
+    height: 40px;
+}
+
+.nombre_pagina h1{
+    height: 30px;
+    margin-left: 10px;
+}
+
+.nav_escritorio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+}
+
+.nav_escritorio a{
+    text-decoration: none;
+    color: var(--colorNegro);
+    margin: 0px 9px;
+    transition: .2s linear;
+}
+
+.nav_escritorio a:hover{
+    color: var(--colorPrincipal);
+}
+
+/*----------Contenedor Principal----------*/
+.contenedor_principal{
+    background-color: red;
+}
+/*----------Presentacion----------*/
+.contenedor_presentacion{
+    width: 100%;
+    background-image: url("../img/fondo.png");
+   background-size: 7.5%;
+    background-repeat: repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.presentacion_center{
+    display: flex;
+    /* background-color: blue; */
+    width: 100%;
+    max-width: 1344px;
+    justify-content: space-around;
+    align-items: center;
+}
+.presentacion_info{
+    max-width: 600px;
+    color: #fff;
+}
+
+.presentacion_info h1{
+    font-family: titulos;
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.presentacion_info p{
+    font-family: texto;
+    font-size: 22px;
+}
+.presentacion_info a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.presentacion_info a:hover{
+    color: var(--colorPrincipalHover);
+}
+
+.presentacion_center img{
+    height: 60%;
+    animation: rotacion 5s linear infinite ;
+}
+
